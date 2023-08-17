@@ -11,8 +11,8 @@ group = "com.example"
 version = "0.0.1-SNAPSHOT"
 java.sourceCompatibility = JavaVersion.VERSION_11
 
-val testcontainersVersion = "1.15.3"
-val postgresVersion="42.2.14"
+val testcontainersVersion = "1.18.3"
+val postgresVersion= "42.2.27"
 
 repositories {
     mavenCentral()
