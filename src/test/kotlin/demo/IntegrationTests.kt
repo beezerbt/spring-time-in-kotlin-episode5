@@ -26,7 +26,7 @@ class IntegrationTests {
        }*/
     @Test
     fun `mockoon container is up and running`() {
-        mockoonContainer.start()
+        //mockoonContainer.start()
         Assertions.assertTrue(mockoonContainer.isRunning)
         println("hi there")
     }
