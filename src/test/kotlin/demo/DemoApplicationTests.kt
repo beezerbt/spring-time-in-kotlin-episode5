@@ -34,13 +34,13 @@ class DemoApplicationTests(
     }
 
     companion object {
-        @Container
+    /*    @Container
         val container = postgres("13-alpine") {
             withDatabaseName("db")
             withUsername("user")
             withPassword("password")
             withInitScript("sql/schema.sql")
-        }
+        }*/
 
         // Kotlin 1.5.20
         val containerA = PostgreSQLContainer<Nothing>(DockerImageName.parse("postgres:13-alpine")).apply {
@@ -57,13 +57,13 @@ class DemoApplicationTests(
             .withPassword("password")
             .withInitScript("sql/schema.sql")
 
-        @JvmStatic
+    /*    @JvmStatic
         @DynamicPropertySource
         fun datasourceConfig(registry: DynamicPropertyRegistry) {
             registry.add("spring.datasource.url", container::getJdbcUrl)
             registry.add("spring.datasource.password", container::getPassword)
             registry.add("spring.datasource.username", container::getUsername)
-        }
+        }*/
     }
 
     @Test
